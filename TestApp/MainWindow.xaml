@@ -1,0 +1,21 @@
+﻿<Window xmlns:my="clr-namespace:TestApp.Tabs"  x:Class="TestApp.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TestApp"
+    Title="Main Window" Height="480" Width="640">
+
+	<TabControl>
+		<TabItem Header="Main Demo">
+			<local:MainDemo/>
+		</TabItem>
+		<TabItem Header="Registry">
+			<local:RegistrySample/>
+		</TabItem>
+        <TabItem Header="Person">
+            <my:PersonSample />
+        </TabItem>
+        <TabItem Header="Rgqancy" Name="tabItem1">
+            <my:RgqancySample />
+        </TabItem>
+    </TabControl>
+</Window>
